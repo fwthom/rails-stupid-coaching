@@ -1,0 +1,21 @@
+<div class="main-container">
+  <div class="alert alert-primary" role="alert">
+    <h4>Question</h4>
+    <p><strong><%= @question %></strong></p>
+    <p><em>-You</em></p>
+  </div>
+
+  <div class="alert alert-success" role="alert">
+    <h4>Answer from Koach</h4>
+    <p><strong><%= @response %></strong></p>
+    <p><em>-Koach</em></p>
+  </div>
+
+  <div>
+    <form action="/answer" data-turbo="false" class="d-flex align-items-center">
+    <input type="text" name="question" class="form-control me-2" placeholder="Ask another question">
+    <input type="submit" value="Ask!" class="btn btn-primary">
+    </form>
+  </div>
+</div>
+</div>
